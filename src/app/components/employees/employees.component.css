@@ -1,0 +1,19 @@
+.button_page{
+    font-size: 20px;
+    width: 30px
+
+}
+
+.button_page1{
+    font-size: 18px;
+    width: 42px;
+    height: 29px;
+}
+
+
+table{
+    align-content: center;
+    text-align: center;
+    padding-left: 200px;
+    padding-top: 20px;
+}

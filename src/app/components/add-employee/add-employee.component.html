@@ -1,0 +1,16 @@
+<form *ngIf="showAddEmployee" class='add-form' >
+    <!-- <div class='form-control'>
+    <label for="id">Employee ID</label>
+    <input type="text" name="id" id="id" placeholder="Enter ID">
+</div> -->
+<!-- (ngSubmit)="onSubmit()" -->
+<div class='form-control'>
+    <label for="name">Employee Name</label>
+    <input type="text" name="name" id="name" [(ngModel)]="name" placeholder="Enter Name">
+    <input type="submit" (click)="getInputValue()" name="Save Employee" class="btnbtn-block">
+    <!-- <input type="submit"  name="Save Employee" class="btnbtn-block"> -->
+</div>
+<!-- {{name}} -->
+</form>
+
+

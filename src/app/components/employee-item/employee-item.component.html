@@ -1,0 +1,51 @@
+<!-- 
+<table>
+    <thead>
+        <tr>
+            ID
+        </tr>
+        <tr>
+            Name
+        </tr>
+
+    </thead>
+<tbody>
+    <tr *ngFor="let employee of employees">
+        <td>
+            {{employee.id}}
+        </td>
+        <td>
+            {{employee.name}}
+
+        </td>
+        <td>
+            <fa-icon (click)="onDelete(employee)" [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon>
+        </td>
+
+    </tr>
+
+</tbody>
+   
+ 
+</table>
+
+ -->
+
+
+
+
+<div class="task">
+    
+<h3 *ngIf="employee.name">{{employee.name}} <fa-icon   (click)="getInputValue2(employee)"[ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon></h3>
+<!-- </fa-icon> <fa-icon (click)="OnEdit(employee)" [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon> -->
+<p>{{employee.id}}</p>
+    </div>
+
+<!-- 
+    <table>
+        <tr *ngFor="let row of EmployeeData">
+            <td>{{row.id}}</td>
+            <td>{{row.name}}</td>
+            <td><fa-icon (click)="onDelete(employee)" [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon></td>
+        </tr>
+    </table> -->

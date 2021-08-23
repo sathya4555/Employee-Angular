@@ -1,0 +1,52 @@
+
+<!-- <select (click)="ngOnInit()">
+    <option value="volvo">2</option>
+    <option value="saab">3</option>
+    <option value="mercedes">4</option>
+    <option value="audi">5</option>
+  </select> -->
+<!-- <button (click)="ngOnInit()">{{value}}</button> -->
+
+<!-- <span><button (click)="page()" (click)="getEmp()">></button>
+<p>
+    Page no {{value}}
+</p>
+<button  (click)="page1()" (click)="getEmp()"><</button></span> -->
+<app-add-employee  (onAddEmployee)="AddEmployee($event)"></app-add-employee>
+<app-employee-item 
+*ngFor="let employee of employees"
+[employee]="employee"
+
+(OnDeleteEmployee)="deleteEmployee(employee)"
+
+(OnEditEmployee)="editEmployee(employee)"
+></app-employee-item>
+
+<!-- <app-employee-item 
+*ngFor="let employee of employees"
+[employee]="employee"
+
+
+
+(OnEditEmployee)="editEmployee(employee)"
+></app-employee-item> -->
+
+<table>
+    <!-- <td>
+        <button class="button_page1"  (click)="startpage()" (click)="getEmp()">1</button>
+    </td> -->
+<td>
+    <button class="button_page" (click)="page1()" (click)="getEmp()">-</button>
+</td>
+<td>....</td>
+<td>
+    Page no {{value}}
+</td>
+<td>....</td>
+<td>
+    <!-- <button class="button_page" (click)="page1()" (click)="getEmp()">-</button> -->
+    <button class="button_page"  (click)="page()" (click)="getEmp()">+</button>
+</td>
+
+</table>
+
